@@ -24,5 +24,5 @@ int main(void) {
     }
     long long f = factorial(n);
     printf("%d! = %lld\n", n, f);
-    return 0;
+    return 0;
 }
