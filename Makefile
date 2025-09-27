@@ -37,3 +37,23 @@ run-formats: formats
 
 clean:
 	rm -rf $(BUILD_DIR)/*.o $(PROGRAMS)
+
+# -------- Lab 2 Programs --------
+lab2_1: src/lab2_1.c
+	$(CC) $(CFLAGS) $< -o bin/lab2_1
+
+lab2_2: src/lab2_2.c
+	$(CC) $(CFLAGS) $< -o bin/lab2_2
+
+lab2_3: src/lab2_3.c
+	$(CC) $(CFLAGS) $< -o bin/lab2_3
+
+# Run shortcuts
+run-lab2_1: lab2_1
+	./bin/lab2_1
+
+run-lab2_2: lab2_2
+	./bin/lab2_2
+
+run-lab2_3: lab2_3
+	./bin/lab2_3 
