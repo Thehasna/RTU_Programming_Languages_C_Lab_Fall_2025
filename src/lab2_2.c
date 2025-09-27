@@ -13,11 +13,11 @@ int main(void) {
     printf("Enter n: ");
     if (scanf("%d", &n) != 1) {
         printf("Invalid input\n");
-        return 1;
+    return 1;
     }
     if (n < 0) {
         printf("Error: n must be >= 0\n");
-        return 1;
+    return 1;
     }
     if (n > 20) {
         printf("Warning: factorial(%d) may overflow 64-bit integer; result may be incorrect.\n", n);
