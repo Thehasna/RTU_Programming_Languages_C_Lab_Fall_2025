@@ -58,12 +58,6 @@ run-lab2_2: lab2_2
 run-lab2_3: lab2_3
 	./bin/lab2_3 
 
-lab2_2: src/lab2_2.c
-	$(CC) $(CFLAGS) $< -o bin/lab2_2
-
-run-lab2_2: lab2_2
-	./bin/lab2_2
-
 # -------- Lab 3 Programs --------
 lab3_task1: src/lab3_task1.c
 	$(CC) $(CFLAGS) $< -o bin/lab3_task1
