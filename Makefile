@@ -63,3 +63,23 @@ lab2_2: src/lab2_2.c
 
 run-lab2_2: lab2_2
 	./bin/lab2_2
+
+# -------- Lab 3 Programs --------
+lab3_task1: src/lab3_task1.c
+	$(CC) $(CFLAGS) $< -o bin/lab3_task1
+
+lab3_task2: src/lab3_task2.c
+	$(CC) $(CFLAGS) $< -o bin/lab3_task2
+
+lab3_task3: src/lab3_task3.c
+	$(CC) $(CFLAGS) $< -o bin/lab3_task3
+
+# Run shortcuts
+run-lab3_task1: lab3_task1
+	./bin/lab3_task1
+
+run-lab3_task2: lab3_task2
+	./bin/lab3_task2
+
+run-lab3_task3: lab3_task3
+	./bin/lab3_task3
